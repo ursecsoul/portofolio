@@ -100,7 +100,7 @@ nav.scrolled { padding:14px 72px; }
     text-decoration:none;
 }
 
-nav ul { display:flex; list-style:none; gap:4px; align-items:center; }
+nav ul { display:flex; flex-wrap: wrap; list-style:none; gap:4px; align-items:center; }
 nav ul li a {
     text-decoration:none;
     color:var(--text-secondary);
