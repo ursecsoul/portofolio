@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Adinda Rachmania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Reading Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+    <h2 class="logo">Adinda.</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Available for work</div>
+        <h1>
+            Hi, I'm<br>
+            <span class="name-outline">Adinda</span><br>
+            Rachmania
+        </h1>
+        <p class="hero-roles">
+            <span class="role-typed" id="typedRole">Web Developer</span>
+            &nbsp;·&nbsp; Student
+        </p>
+        <p class="hero-bio">
+            A passionate student in <em>web & mobile development</em>,
+            focused on beautiful interfaces, solid functionality, and
+            delightful user experiences.
+        </p>
+        <div class="hero-btns">
+            <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                See My Work ↓
+            </button>
+            <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+            <a href="https://github.com/ursecsoul" target="_blank" class="social-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/adinnrch" target="_blank" class="social-link" title="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
+            </a>
+            <a href="mailto:adindarchmn24@email.com" class="social-link" title="Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="photo-wrapper">
+            <img src="./img/ar.png" alt="Adinda Rachmania" 
+                    style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;">
+
+            <!-- Floating Badges -->
+            <div class="badge badge-1">
+                <span class="badge-icon">
+                    <!-- Monitor / Code icon -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                        <path d="m9 8 2 2-2 2M13 12h2"/>
+                    </svg>
+                </span>
+                <div>
+                    <div style="font-size:11px;color:var(--text-muted);line-height:1.2">Experience</div>
+                    <div>Web Developer</div>
+                </div>
+            </div>
+            <div class="badge badge-2">
+                <span class="badge-icon">
+                    <!-- Graduation cap icon -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </span>
+                <div>
+                    <div style="font-size:11px;color:var(--text-muted);line-height:1.2">Status</div>
+                    <div>Student</div>
+                </div>
+            </div>
+            <div class="badge badge-3">
+                <span class="badge-icon">
+                    <!-- Folder / Layers icon -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12.5V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7"/><path d="M2 12.5A2.5 2.5 0 0 1 4.5 10H8l2-3h4l2 3h3.5A2.5 2.5 0 0 1 22 12.5"/>
+                    </svg>
+                </span>
+                <div>
+                    <div style="font-size:11px;color:var(--text-muted);line-height:1.2">Projects</div>
+                    <div>3 Completed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" class="section">
+    <div class="section-header reveal">
+        <span class="section-label">Who I Am</span>
+        <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+        <div class="about-text reveal">
+            <p>
+                Hi I'm a <span class="highlight-text">deep passion</span>
+                for application and web development. Experienced in building web and mobile
+                projects with a focus on functionality, design, and ease of use.
+            </p>
+            <p>
+                Proficient in frontend and backend stacks including PHP, CSS, MySQL, and database
+                management. Passionate about crafting designs that genuinely improve
+                <span class="highlight-text">user experience</span>.
+            </p>
+            <p>
+                Capable of working independently as well as collaboratively in a team, always
+                eager to learn new technologies and committed to delivering the best results.
+            </p>
+        </div>
+        <div class="about-cards reveal-stagger">
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <!-- Globe / Web icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h4>Web Dev</h4>
+                <p>HTML, CSS, JS, PHP, React, Next, Laravel, CodeIgniter</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <!-- Smartphone icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+                    </svg>
+                </div>
+                <h4>Mobile Dev</h4>
+                <p>Flutter & Dart, Android</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <!-- Pen Tool / Design icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/>
+                    </svg>
+                </div>
+                <h4>UI/UX Design</h4>
+                <p>Figma, Prototyping, Wireframe</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <!-- Database icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    </svg>
+                </div>
+                <h4>Database</h4>
+                <p>MySQL, Database Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects" class="section" style="background:var(--bg-surface)">
+    <div class="section-header reveal">
+        <span class="section-label">What I've Built</span>
+        <h2>My Projects</h2>
+        <p class="section-desc">Some of the projects I've worked on — from a school profile website to mobile applications.</p>
+    </div>
+    <div class="project-container reveal-stagger">
+
+        <div class="card" onclick="openModal(0)">
+            <div class="card-number">01</div>
+            <span class="card-tag">Web Development</span>
+            <h3>Website Profile SMPN 10 Malang</h3>
+            <p>School profile website with a full admin dashboard for dynamic content management.</p>
+            <div class="card-arrow">View Details →</div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <div class="card-number">02</div>
+            <span class="card-tag">Mobile App</span>
+            <h3>ISO: Izin Siswa Online</h3>
+            <p>A Flutter app for digital student attendance and leave requests, with real-time tracking.</p>
+            <div class="card-arrow">View Details →</div>
+        </div>
+
+        <div class="card" onclick="openModal(2)">
+            <div class="card-number">03</div>
+            <span class="card-tag">Web Development</span>
+            <h3>Pawtopia: Pet Care Information System</h3>
+            <p>Complete pet care information system website with an admin dashboard.</p>
+            <div class="card-arrow">View Details →</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══ MODAL ══ -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">✕</button>
+        <div class="modal-img-wrapper">
+            <img id="modalImage" src="" alt="" class="modal-img" style="display:none">
+            <div class="modal-img-placeholder" id="modalPlaceholder"></div>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag" id="modalTag"></span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+            <div class="modal-tech" id="modalTech"></div>
+            <div class="modal-actions">
+                <a id="modalLink" href="#" target="_blank" class="github-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills" class="section">
+    <div class="section-header reveal">
+        <span class="section-label">My Stack</span>
+        <h2>Skills & Tools</h2>
+    </div>
+    <div class="skills-grid reveal-stagger">
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Code / HTML icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">HTML & CSS</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Zap / JS icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">JavaScript (React & Next)</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Server / PHP icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>
+                    <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">PHP (CI & Laravel)</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Smartphone / Flutter icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">Dart (Flutter)</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70%"></div></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Database / MySQL icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">MySQL & Supabase</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82%"></div></div>
+            </div>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <!-- Figma / Pen icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
+                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
+                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
+                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
+                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+                </svg>
+            </div>
+            <div class="skill-info">
+                <div class="skill-name">Figma</div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="section">
+    <div class="contact-inner">
+        <div class="section-header reveal">
+            <span class="section-label">Let's Connect</span>
+            <h2>Get In Touch</h2>
+            <p class="section-desc" style="margin-top:14px">
+                Interested in working together or just want to say hi? Feel free to reach out!
+            </p>
+        </div>
+        <div class="contact-links reveal-stagger">
+            <a href="mailto:adindarchmn24@email.com" class="contact-link">
+                <span class="contact-link-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </span>
+                adindarchmn24@email.com
+            </a>
+            <a href="https://github.com/ursecsoul" target="_blank" class="contact-link">
+                <span class="contact-link-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </span>
+                github.com/ursecsoul
+            </a>
+            <a href="https://instagram.com/adinnrch" target="_blank" class="contact-link">
+                <span class="contact-link-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </span>
+                @adinnrch
+            </a>
+        </div>
+        <div class="contact-availability reveal" style="transition-delay:0.3s">
+            <span class="avail-dot"></span>
+            Currently open for projects & collaborations
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <span class="footer-logo">Adinda.</span>
+    <span>© 2026 Adinda Rachmania. All rights reserved.</span>
+    <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
